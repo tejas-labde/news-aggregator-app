@@ -1,0 +1,19 @@
+<div class="posts-container">
+    <app-filter-options-container (optionClicked)="onFilterApplied($event)"></app-filter-options-container>
+    <!-- contains all the news posts  -->
+    <div>
+        @if(newsData.length>0){
+            <div class="news-article-container">
+                @for(article of newsData;track article){
+                <div class="article">
+                    <h2>{{article.headline}}</h2>
+                    <p>{{article.abstract}}</p>
+                    <span class="section-tag">{{article.section}}</span>
+                </div>
+            }
+        </div>
+        }@else {
+            <app-empty-state [key]="currentKey"></app-empty-state>
+        }
+    </div>
+</div>

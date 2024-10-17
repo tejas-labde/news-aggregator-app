@@ -1,0 +1,14 @@
+.filter-options-container{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    padding: 8px;
+}
+
+.filter-button{
+    background: none;
+    padding: 8px 16px 8px 16px;
+    border-radius: 8px;
+    border: thin dotted black;
+    cursor:pointer;
+}

@@ -1,0 +1,7 @@
+<div class="filter-options-container">
+    @for(option of filterOptions;track option){
+    <button class="filter-button" (click)="onOptionClick(option.key)">
+        {{option.label}}
+    </button>
+    }
+</div>
